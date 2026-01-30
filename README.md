@@ -6,10 +6,10 @@ The app fetches blog data from a public API, supports search and category filter
 ---
 
 ## 🌐 Live Demo
-🔗 https://your-vercel-url.vercel.app
+🔗 https://article-x-navy.vercel.app/
 
 ## 📦 GitHub Repository
-🔗 https://github.com/your-username/blog-app
+🔗 https://github.com/ayushbagchi58/ArticleX
 
 ---
 
@@ -121,12 +121,30 @@ Used proper semantic elements:
 
 ## 📸 Lighthouse Reports
 
-Screenshots stored in `/screenshots` folder:
+### 🚀 Performance
+![Performance Lighthouse Score](./screenshots/performance.png)
 
-- Performance
-- Accessibility
-- Best Practices
-- SEO
+### ♿ Accessibility
+![Accessibility Lighthouse Score](./screenshots/accessibility.png)
+
+### ✅ Best Practices
+![Best Practices Lighthouse Score](./screenshots/best-practices.png)
+
+### 🔍 SEO
+![SEO Lighthouse Score](./screenshots/seo.png)
+
+
+### Lighthouse Best Practices Score
+
+The Lighthouse Best Practices score is lower due to missing security headers
+(e.g. `X-Frame-Options`, `X-Content-Type-Options`) on responses from the
+third-party SlingAcademy API.
+
+Since the API is external and does not allow custom response headers,
+this issue cannot be resolved at the application level.
+
+All application-controlled best practices (HTTPS, no mixed content,
+secure images, modern JS) are correctly implemented.
 
 ---
 
