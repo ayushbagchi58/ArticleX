@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tech Blog App 🚀
 
-## Getting Started
+A fast, SEO-optimized tech blog website built using **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.  
+The app fetches blog data from a public API, supports search and category filtering, and follows modern SEO and accessibility best practices.
 
-First, run the development server:
+---
+
+## 🌐 Live Demo
+🔗 https://your-vercel-url.vercel.app
+
+## 📦 GitHub Repository
+🔗 https://github.com/your-username/blog-app
+
+---
+
+## 🛠️ Technologies Used
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Git & GitHub
+- Vercel (Deployment)
+
+---
+
+## ✨ Features
+
+### Home Page
+- Header with navigation
+- Hero section
+- Article grid (10 posts)
+- Footer
+
+### Search
+- Search by **title**, **description**, and **content**
+- Displays search result count
+- Shows "No results found" message
+
+### Category Filter
+- Displays all unique categories
+- Active category highlighting
+- Works together with search
+
+### Article Modal
+- Opens full article content
+- Close via:
+  - ❌ X button
+  - ⌨ ESC key
+  - 🖱 Outside click
+
+### Responsive Design
+- 📱 Mobile: 1 column
+- 📲 Tablet: 2 columns
+- 💻 Desktop: 3 columns
+
+---
+
+## 🔍 SEO Strategy
+
+### Meta Tags
+Implemented using Next.js Metadata API:
+- Title (≤ 60 characters)
+- Description (≤ 160 characters)
+- Open Graph tags
+- Twitter Card tags
+
+### Semantic HTML
+Used proper semantic elements:
+- `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`, `<time>`
+- Only **one H1 per page**, followed by H2 and H3
+
+### Structured Data (JSON-LD)
+- **WebSite schema** on homepage
+- **Article schema** for blog posts
+
+### Image Optimization
+- Next.js `<Image>` component
+- Lazy loading enabled
+- Descriptive alt text for all images
+
+### Technical SEO
+- `robots.txt`
+- `sitemap.xml`
+- Clean URL structure
+
+---
+
+## ⚡ Performance Optimizations
+- Server Components where possible
+- API data fetching optimization
+- Image optimization via Next.js
+- Minimal client-side JS
+- Lighthouse-tested before deployment
+
+---
+
+## 🧠 Search & Filter Logic
+- Articles fetched once from API
+- Search filters across:
+  - title
+  - description
+  - content_text
+- Category filter applied on searched results
+- Combined filtering handled in state
+
+---
+
+## ⏳ Loading & Error Handling
+- Skeleton loaders while fetching data
+- Graceful error UI for API failures
+
+---
+
+## ♿ Accessibility
+- Keyboard navigation (Tab, Enter, ESC)
+- Focus trapping in modal
+- Proper color contrast (WCAG AA)
+- Semantic HTML
+
+---
+
+## 📸 Lighthouse Reports
+
+Screenshots stored in `/screenshots` folder:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO
+
+---
+
+## 🚧 Challenges Faced
+- Combining search and category filters efficiently
+- Implementing accessible modal behavior
+- Structured data integration
+- SEO optimization in App Router
+
+---
+
+## 🧪 How to Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
